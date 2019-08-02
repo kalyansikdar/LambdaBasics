@@ -15,9 +15,13 @@ public class Unit1Exercise {
         Collections.sort(people);
         printAllPersons(people);
     }
-    public static void printAllPersons(List<Person> people) {
+    private static void printAllPersons(List<Person> people) {
         for (Person person: people) {
             System.out.println(person);
         }
     }
+
+    // Ex 1: Print all the persons
+    // Ex 2: Print all persons whose names start with C
+    // Ex 3: Print all persons whose names ends with E
 }

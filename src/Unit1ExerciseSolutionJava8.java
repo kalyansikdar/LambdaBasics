@@ -40,4 +40,7 @@ public class Unit1ExerciseSolutionJava8 {
 //        }
 //        System.out.println();
 //    }
+public interface Condition {
+    boolean test(Person person);
+}
 }

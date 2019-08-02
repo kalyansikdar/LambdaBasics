@@ -1,2 +1,4 @@
 # Project exclude paths
 /out/
+# ignore file named Condition.java
+HelloWorldGreeter
