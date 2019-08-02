@@ -13,7 +13,7 @@ public class Unit1ExerciseSolutionJava7 {
                 new Person("Matthew", "Arnold", 39)
         );
 
-        Collections.sort(people, new Comparator<Person>() {
+        Collections.sort(people, new Comparator<>() {
 
             @Override
             public int compare(Person person1, Person person2) {
@@ -49,10 +49,16 @@ public class Unit1ExerciseSolutionJava7 {
         }
     }
 
-    public static void printAllPersons(List<Person> people) {
+    private static void printAllPersons(List<Person> people) {
         for (Person person: people) {
             System.out.println(person);
         }
         System.out.println();
     }
+
+    public interface Condition {
+        boolean test(Person person);
+    }
 }
+
+
