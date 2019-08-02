@@ -1,6 +1,9 @@
+package Unit1;
+
+import Common.Person;
+
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class Unit1ExerciseSolutionJava8 {
@@ -17,7 +20,6 @@ public class Unit1ExerciseSolutionJava8 {
 
         System.out.println("Print all people... ");
         printConditionally(people, person -> true);
-//        printAllPersons(people);
 
         System.out.println("Print all people whose last name starts with C... ");
         printConditionally(people, person -> person.getLastName().startsWith("C"));
@@ -34,12 +36,6 @@ public class Unit1ExerciseSolutionJava8 {
         }
     }
 
-//    public static void printAllPersons(List<Person> people) {
-//        for (Person person: people) {
-//            System.out.println(person);
-//        }
-//        System.out.println();
-//    }
 public interface Condition {
     boolean test(Person person);
 }

@@ -1,4 +1,6 @@
-public class Person implements Comparable<Person>{
+package Common;
+
+public class Person{
     private String firstName;
     private String lastName;
     private Integer age;
@@ -35,11 +37,6 @@ public class Person implements Comparable<Person>{
 
     @Override
     public String toString() {
-        return "Person: [FirstName: " + firstName + ", Last Name: " + lastName + ", Age: " + age + "]";
-    }
-
-    @Override
-    public int compareTo(Person person) {
-        return this.getLastName().compareTo(person.getLastName());
+        return "Common.Person: [FirstName: " + firstName + ", Last Name: " + lastName + ", Age: " + age + "]";
     }
 }
