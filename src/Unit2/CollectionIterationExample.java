@@ -19,7 +19,7 @@ public class CollectionIterationExample {
         for (int i = 0; i < people.size(); i ++) {
             System.out.println (people.get(i));
         }
-        // For each loop with older Java versiob
+        // For each loop with older Java version
         for (Person person : people)
             System.out.println(person);
 
@@ -29,5 +29,10 @@ public class CollectionIterationExample {
         // print only the firstname of the people whose lastname starts with C
         people.stream().filter(p -> p.getLastName().startsWith("C")).forEach(p -> System.out.println(p.getFirstName()
         ));
+
+        // Count number of people whose last name does not start with C
+        long count = people.stream().filter(p -> !p.getLastName().startsWith("C")).count();
+        System.out.println("Number of people whose last name does not start with C: " + count);
+
     }
 }
