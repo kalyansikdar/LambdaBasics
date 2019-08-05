@@ -1,12 +1,12 @@
 package Unit2;
 
+import Common.Person;
+
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
-import Common.Person;
 
 public class StandardFunctionalInterfaceExample {
     public static void main(String[] args){
